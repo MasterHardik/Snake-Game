@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("./theme/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.owner{
+    /* background-color: azure; */
+    margin-top: 65px;
+    font-size: 20px;
+    font-weight:400;
+    opacity:0.8;
+    text-align: right;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.owner:hover{
+    color: rgb(206, 255, 188);
+}
+#score{
+    color: white; 
+    font-size:larger; 
+}
