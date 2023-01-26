@@ -3,7 +3,9 @@
     margin: 0 auto;
 }
 body{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     url("./theme/bg.jpg");
     background-repeat: no-repeat;
@@ -29,4 +31,52 @@ a{
 #score{
     color: white; 
     font-size:larger; 
+}
+/*arrow keys css */
+  .arrow-key-container {
+    display: inline-block;
+    text-align: center;
+    transform: translate3d(0,0,0);
+  }
+  .arrow-key {
+    align-items: center;
+    background: #ccc;
+    border-radius: 6px;
+    box-shadow: -1px 1px 0 #999, -2px 2px 0 #999, -3px 3px 0 #999, -4px 4px 0 #999;
+    color: #fff;
+    display: inline-flex;
+    font-size: 30px;
+    font-weight: bold;
+    height: 65px;
+    justify-content: center;
+    margin: 5px;
+    transform: translate3d(0, 0, 0);
+    transition: box-shadow .1s linear, transform .1s linear;
+    width: 65px;
+  }
+  .arrow-key:active,.arrow-key.press {
+      box-shadow: 0px 0px 0 #999, 0px 0px 0 #999, 0px 0px 0 #999, -1px 1px 0 #999;
+      transform: translate3d(-3px, 3px, 0);
+    }
+    .arrow-key.left:before {
+      content: "\2190";
+    }
+    .arrow-key.up:before {
+      content: "\2191";
+    }
+    .arrow-key.down:before {
+      content: "\2193";
+    }
+    .arrow-key.right:before {
+      content: "\2192";
+    }
+
+.restart{
+    display: flex;
+    /* position: absolute; */
+    height: 25px;
+    width: 25px;
+    /* background-color: black; */
+    background-image: url(./theme/reset.png);
+    background-size: 25px;
 }

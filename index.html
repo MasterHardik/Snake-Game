@@ -8,14 +8,20 @@
     <title>Snake Game</title>
 </head>
 <body>
-    <h1 style="color:white;text-align: center;padding-top:13px;">Snake Game </h1>
+    <h1 style="color:white;text-align: center;padding-top:13px;">Snake Game <span class="restart" onclick="window.location.reload()"></span></h1>
     <canvas class="board" id="board">
-        
     </canvas>
+    <div class="arrow-key-container">
+        <div class="arrow-key up" data-key="38" onclick="up()"></div><br>
+        <div class="arrow-key left" data-key="37" onclick="left()"></div>
+        <div class="arrow-key down" data-key="40" onclick="down()"></div>
+        <div class="arrow-key right" data-key="39" onclick="right()"></div>
+    </div>
     <p id="score">Score : 0</p>
-    <a href="http://www.github.com/masterhardik">
+    <!-- <a href="http://www.github.com/masterhardik">
         <footer class="owner" >www.github.com/masterhardik</footer>
-    </a>
+    </a> -->
+<!-- Arrow keys for phone mode -->
     <script src="index.js"></script>
 </body>
 </html>
